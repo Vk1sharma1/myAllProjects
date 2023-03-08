@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vks.com</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link  href="script.js">
+</head>
+<body>
+   
+   
+    <div id="topbar"> <div class="space">
+        <div class="con" onclick="myfunction(this)">
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+    </div>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="about">About</a>
+        <a href="signup">Sign up</a>
+        
+    </div>
+    <section id="sec">
+        swaha.com
+    </section>
+    
+    
+        
+        <div id="login">
+        <p>Username:-
+        <input  id="names" name="names">
+        </p>
+        <p>Password:-
+        <input type="password"          name="password" id="password">
+        </p>
+        <button  onclick="submit()">submit</button>
+        
+        </div>
+        
+            
+            <div id="namesList">
+                
+            </div>
+        
+    
+        <script>
+            
+            function submit(){
+                allNames = [];
+                var names = document.getElementById("names").value;
+                allNames.push(names);
+                localStorage.setItem("names" , names)
+                document.getElementById("namesList").innerHTML = allNames
+            }
+
+           
+            function myfunction(x) {
+                x.classList.toggle("change");
+
+            }
+                
+
+        </script>
+        
+</body>
+</html>

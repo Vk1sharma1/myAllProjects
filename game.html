@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="gamestyle.css">
+</head>
+
+<body>
+    <audio loop id="audio">
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audio2">
+        <source src="carcrash.mp3" type="audio/mpeg">
+    </audio>
+    <div id="main_container">
+
+        <div id="game_container">
+            <div class="enemy"></div>
+            <div class="enemy1"></div>
+            <div class="enemy2"></div>
+            <div class="solder"></div>
+            <div class="bullet"></div>
+            <div class="laser"></div>
+            <div class="score">
+                <div class="scr">SCORE</div>
+                <div class="progress"></div>
+                <div class="number">00</div>
+            </div>
+            <button class="play_pause">play</button>
+        </div>
+
+        <div id="btn_container">
+
+            <button class="left"><img src="left.png" alt=""></img></button></button>
+            <button class="shoot" onclick="shoot_fun()"><img src="shoot.png" alt=""></button>
+            <button class="right"><img src="right.png" alt=""></button></button>
+        </div>
+
+    </div>
+
+    <script>
+
+    </script>
+    <script src="gamescript.js"></script>
+</body>
+
+</html>

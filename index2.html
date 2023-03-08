@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="index2style.css">
+    <script src="index2script.js"></script>
+    <style>
+        .box {
+            
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: aliceblue;
+
+        }
+
+        .container {
+            
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            width: 50vw;
+            height: 70vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid;
+            border-color: rgb(0, 255, 0);
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="body">
+        <div id="topbar">
+
+            <div class="con" onclick="myfunction(this)">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+            </div>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+
+            <a href="index2.html" style="text-decoration: underline;">storeuse</a>
+
+            <div class="order">Order No
+                <div id="number">0</div>
+                being prepaired
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="box">
+        <div class="container">
+            <div id="number2">0</div>
+
+
+            <div>
+                <button id="plus" onclick="counter(plus)">Next</button>
+                <button id="minus" onclick="counter(minus)">Previous</button>
+            </div>
+            <button id="reset" onclick="counter(reset)">Reset</button>
+        </div>
+    </div>
+
+
+    <script>
+
+        var b = localStorage.getItem("num");
+        var a = parseInt(b);
+        document.getElementById("number").innerHTML = a;
+        document.getElementById("number2").innerHTML = a;
+
+
+        function counter(button) {
+
+            if (button == plus) {
+                a += 1;
+
+            } else if (button == minus) {
+                if (a <= 0) {
+                    a = a;
+                } else {
+                    a = a - 1;
+                }
+
+
+            } else if (button == reset) {
+                a = 0;
+            }
+            document.getElementById("number").innerHTML = a;
+            document.getElementById("number2").innerHTML = a;
+            localStorage.setItem('num', a);
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    /*background:linear-gradient(to bottom right, #dfaaffa0 , #40ff63a0); */
+    background-repeat: no-repeat;
+    margin-top: 0%;
+    margin-bottom: 50%;
+    
+    
+}
+
+#login{
+    margin-top: 20%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d6c6f07c;
+    border-color: black;
+    border: 2px solid;
+    position: absolute;
+    padding: 150px;
+    
+}
+#sec{
+    position: absolute;
+    font-family: initial;
+    color: whitesmoke;
+    font-size: 60px;
+    
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            margin-top: 180px;
+         
+    
+}
+#names{
+    border: 2px solid;
+    margin: 5px;
+    padding: 2px;
+    font-size: 20px;
+}
+p{
+    font-size: 20px;
+    
+}
+
+#password{
+    border: 2px solid;
+    margin: 5px;
+    padding: 2px;
+    font-size: 20px;
+}
+button{
+    background-color: gray;
+    width: 70px;
+    height: 30px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(235, 243, 125);
+}
+
+#topbar{position: absolute;
+        margin: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    
+}
+#topbar a{
+    padding: 15px;
+    padding-left: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+.con{
+    position: absolute;
+    display: flexbox;
+    flex-direction: row;
+
+    cursor: pointer;
+}
+.b1, .b2, .b3{
+    margin: 5px;
+    
+    background-color: white;
+    width: 35px;
+    height: 5px;
+    transition: 0.4s;
+    
+}
+
+.change .b1{
+
+    transform: translate(0,10px) rotate(-45deg);
+}
+
+.change .b2{
+    opacity: 0;
+}
+
+.change .b3{
+    transform: translate(0, -10px) rotate(45deg);
+}
+
+.space{
+    margin-top: 10px;
+    position: absolute;
+    width: 100%;
+    
+}
+
+#topbar a:hover{
+   
+   color: aqua;
+   text-decoration:underline;
+   margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+#namesList{
+    
+    margin-top: 10%;
+    position: absolute;
+    font-size: 50px;
+    
+}
